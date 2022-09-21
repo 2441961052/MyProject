@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SearchActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="@string/search_tv_title"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/search_et_cityName"
+            android:hint="@string/city_name"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"/>
+        <Button
+            android:id="@+id/search_btn"
+            android:text="@string/search_btn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/search_detail"
+        android:text="@string/search_detail"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

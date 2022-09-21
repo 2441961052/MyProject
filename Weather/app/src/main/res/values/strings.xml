@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">天气查询</string>
+    <string name="look_weather">天气查询</string>
+    <string name="search_tv_title">天气查询</string>
+    <string name="city_name">成都</string>
+    <string name="search_btn">查询</string>
+    <string name="search_detail">详情</string>
+</resources>
